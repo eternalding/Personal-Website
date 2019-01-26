@@ -6,13 +6,12 @@ image: /assets/images/dawn.jpg
 {% include page-intro.html %}
 
 <main id="main" class="page-content" aria-label="Content">
-  <div>
-      <img src="assets/images/dawn.jpg">
 
-  </div>
   <div class="index inner">
     <div>{{ content }}</div>
-
+    {% for post in site.categories.Machine_Learning %}
+    <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
     <div>
       <header class="section-title">
         <h2>{{ site.data.theme.t.posts | default: 'Posts' }}{% if paginator.page > 1 %}{{ site.data.theme.t.page | default: 'Page' | prepend: ' - ' | append: ' ' }}{{ paginator.page }} {{ site.data.theme.t.of | default: 'of' }} {{ paginator.total_pages }}{% endif %}</h2>
