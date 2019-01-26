@@ -4,9 +4,9 @@ author: Eternalding
 title: "Tangent Propagation"
 ---
 
- <font color=#7B68EE size=7>Tangent Propagation</font>
+ <font color=#7B68EE size=7>Tangent Propagation</font>  
  ========================================================
-本文圖片均來自Bishop - Pattern Recognition and Machine Learning , 2006 Spring. All rights reserved.
+本文圖片均來自Bishop - Pattern Recognition and Machine Learning , 2006 Spring. All rights reserved.  
 
 # __Introduction__
 
@@ -19,7 +19,7 @@ title: "Tangent Propagation"
 # __Tangent Propagation__
 
   首先給定 input vector X<sub>n</sub>，並對其做 continuous transformaion(例如旋轉)，則 X<sub>n</sub> 將在 D-dimension的空間中，掃出一個manifold(流型) *M*，如下圖:  
-  <center>![salkdfhgol](/assets/tangent_propagation/1-1.jpg)</center>
+  <center>![ss](/assets/tangent_propagation/1-1.jpg)</center>
   <center>D=2的例子</center>
 
   假定這個 continuous transformation 只受到單一變量 $\Xi$ 的影響，例如旋轉的角度，則 *M* 是一個一  
